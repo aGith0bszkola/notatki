@@ -1,31 +1,19 @@
 package com.example.myapplication;
 
-
-
 import com.google.gson.annotations.SerializedName;
 
-import kotlin.jvm.internal.SerializedIr;
-
-public class Notatki {
+public class Ksiazki {
     @SerializedName("Tytul")
-    private String tytul;
+    String tytul;
     @SerializedName("Tresc")
-    private  String tresc;
+    String Tresc;
+    @SerializedName("Data_Publickaji")
+    int DataPublikacji;
 
-    public int getData_publikacji() {
-        return data_publikacji;
-    }
-
-    public void setData_publikacji(int data_publikacji) {
-        this.data_publikacji = data_publikacji;
-    }
-
-    public String getTresc() {
-        return tresc;
-    }
-
-    public void setTresc(String tresc) {
-        this.tresc = tresc;
+    public Ksiazki(String tytul, String tresc, int dataPublikacji) {
+        this.tytul = tytul;
+        this.Tresc = tresc;
+        DataPublikacji = dataPublikacji;
     }
 
     public String getTytul() {
@@ -36,12 +24,19 @@ public class Notatki {
         this.tytul = tytul;
     }
 
-    @SerializedName("Data_publikacji")
-    private int data_publikacji;
+    public String getTresc() {
+        return Tresc;
+    }
 
-    public Notatki(String tytul, String tresc, int data_publikacji) {
-        this.tytul = tytul;
-        this.tresc = tresc;
-        this.data_publikacji = data_publikacji;
+    public void setTresc(String tresc) {
+        Tresc = tresc;
+    }
+
+    public int getDataPublikacji() {
+        return DataPublikacji;
+    }
+
+    public void setDataPublikacji(int dataPublikacji) {
+        DataPublikacji = dataPublikacji;
     }
 }
