@@ -7,8 +7,10 @@ public class Ksiazki {
     String tytul;
     @SerializedName("Tresc")
     String Tresc;
-    @SerializedName("Data_Publickaji")
+    @SerializedName("Data_Publikcaji")
     int DataPublikacji;
+
+
 
     public Ksiazki(String tytul, String tresc, int dataPublikacji) {
         this.tytul = tytul;

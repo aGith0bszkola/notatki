@@ -6,6 +6,6 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 public interface JsonPlaceHolder {
-    @GET("ksiazki")
-    Call<List<Ksiazki>> getKsiazki();
+    @GET("database.json")
+   public Call<List<Ksiazki>> getKsiazki();
 }

@@ -6,18 +6,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:layout_marginTop="20px"
+    android:backgroundTint="@color/white">
 
     <TextView
+        android:id="@+id/tytul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tytuł:" />
+        android:text="tytul:" />
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/tresc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Treść:" />
+        android:text="tresc:" />
 
     <TextView
         android:id="@+id/textView2"
@@ -34,19 +37,30 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        >
 
         <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Poprzedania ksiazka" />
+            android:text="Poprzedania ksiazka"
+            android:textAllCaps="true"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:layout_gravity="bottom"
+            android:textSize="10dp"/>
 
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nastepna ksiazka" />
+            android:text="Nastepna ksiazka"
+            android:layout_gravity="bottom"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:textAllCaps="true"
+            android:textSize="10dp"/>
     </LinearLayout>
 
 </LinearLayout>
